@@ -1,0 +1,1488 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+   
+}
+
+body{  
+    margin-left:0px ;
+    margin-right:0px ;
+    padding-left:0px ;
+    padding-right:0px ;
+}
+
+.flome{
+    background-image: url("https://wallpaperaccess.com/full/303159.jpg");
+    background-size: cover;
+      margin-left: 0px;
+   
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    position: fixed;
+    z-index: 10000;
+    background-color: white;
+    top: 0;
+    height: 1.5cm;
+    align-self: center;
+  padding: 0 0.3cm 0 0.3cm;
+ 
+}
+.navbar .div{
+    width: 40%;
+    justify-self: start;
+    font-size: 0.7cm; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.navbar .div span{
+    font-weight: 800;
+    color: #ff1744;
+    transition: 0.5s;
+
+}
+.navbar .div:hover span{
+    color: #7b1fa2;
+} 
+.navbar .di{
+display: flex;
+margin-right: 0px;
+align-self: center;
+background-color: white;
+}
+.tit{
+    margin-left: 40px;
+}
+.navbar .di a{
+    text-decoration: none;
+    color: #212121; 
+    transition: 0.6s;
+    position: relative;
+    transform-origin: bottom;
+
+}
+.navbar .di a::after{
+    position: absolute;
+    content: "";
+    background-color: #ff1744;
+    top: 20px;
+    width: 0%;
+    left: 0;
+    height: 3px;
+    border-radius: 4px;
+    transition: 0.6s;
+}
+.navbar .di a:hover::after{
+    width: 100%;
+}
+.navbar .di a:hover{
+    color: black;
+    letter-spacing: 2px;
+}
+.df{
+    display: flex;
+}
+.lines3{
+    margin-left: 0px;
+    
+}
+.gj{
+    display: none;
+}
+.line1{
+    height: 3px ;
+    width: 1cm;
+    background-color: #ff1744;
+}
+.line2{
+    height: 3px ;
+    width: 1cm;
+    background-color: #ff1744;
+}
+.line3{
+    height: 3px ;
+    width: 1cm;
+    background-color: #ff1744;
+    margin-left: 0px;
+}
+.about{
+    width: 100%;
+    margin-top: 2cm;    
+}
+.about .title{
+    text-align: center;
+    font-size: 0.9cm;
+    font-weight: 800;
+    border-radius: 5px;
+    transition: 0.4s;
+  
+    
+}
+.about .title span{
+    color: #7b1fa2;
+    transition: 0.4s;
+}
+.about .title:hover{
+    letter-spacing: 2px;
+    
+}
+.about .title:hover span{
+    color:#ff1744 ;
+}
+
+.about .p{
+    font-size: 0.45cm;
+    color: #212121;
+    text-align: center;
+    margin-top: 0.6cm;
+    padding: 0 0.5cm 0 0.5cm;
+}
+.hawicard{
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+   height:350px;
+  margin-bottom: 1cm;
+  
+}
+.hawicard .card{
+    width: 250px;
+    position: relative;
+    height: 350px; 
+   
+}
+.hawicard .card .face{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+.hawicard .card .face.mincard{
+ color: aliceblue;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ z-index: 1;
+  }
+  .hawicard .card .face.mincard1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .hawicard .card .face.mincard1 div{
+      width: 100%;
+      height: 67%;
+      background-color: rgba(240, 248, 255, 0.418);
+      border-radius: 2px;
+    transform-origin: center;
+    transform: scaleY(1.05);
+      transition: 0.5s;
+      padding: 0.5cm 0.3cm; 
+      color: #212121db;
+      transform: scaleY(0);
+      
+  }
+
+  .hawicard .card .mincard.face div{
+      width: 100%;
+      height: 15%;
+     
+      transform-origin: top;
+      border-radius: 2px;
+      transition: 0.5s;
+      display: flex;
+      align-items: center;
+      
+      background-color: #21212110;
+  }
+  .hawicard .card .mincard .half1 .div{
+    display: flex;
+    align-items: center;
+    
+  }
+  .hawicard .card .mincard .half1 .kissme{
+  font-size: 0.8cm;
+  color: #212121;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0);
+  }
+  .hawicard .card .mincard .half2 {
+      display: flex;align-items: center; justify-content: center;
+  }
+  .hawicard .card .mincard .half2 button{
+padding: 0.1cm 0.4cm 0.1cm 0.4cm;
+border-radius: 5px;
+border: none;
+background-color: #ff1744;
+font-weight: 700;
+color: aliceblue;
+letter-spacing: 1px;
+transition: 0.3s;
+  }
+  .hawicard .card .mincard .half2 button:hover{
+letter-spacing:2px;
+  }
+  .hawicard .card .mincard .half2 button:active{
+    background-color: #ff174599;
+    transform: scale(0.9);
+      }
+
+
+
+
+        .hawicard .card:hover .mincard .half1{
+      transform: translateY(-230%)  scale(1.05);
+   
+
+  }
+.hawicard .card:hover .mincard .half2{
+    transform: translateY(230%)  scale(1.05);
+    
+}
+.hawicard .card:hover .mincard1 div{
+    transform:scaleY(1) scale(1.05);
+    
+}
+.hawicard .card:hover .face.mincard .half1{
+    background-color: #212121d5;
+}
+.hawicard .card:hover .face.mincard .half2{
+    background-color: #212121d5;
+}
+.hawicard .card:hover .mincard .half1 .kissme{
+    color: aliceblue;
+}
+
+#tit p{
+    width: 100%;
+    text-align: center;
+    font-size: 1cm;
+    transition: 0.5s;
+}
+#tit p span{
+font-weight: 800;
+color: #ff1744;
+transition: 0.5s;
+}
+#tit p:hover span{
+color: #7b1fa2;
+}
+#tit p:hover{
+letter-spacing: 1px;
+}
+.cat{
+    width: 100%;
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #21212189;
+    font-size: 1cm;
+    letter-spacing: 0.5px;
+    
+}
+.padding{
+    padding: 0;
+    
+}
+.hawirote{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    height: auto;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+  
+}
+.hawirote .rote{
+    width: 240px;
+    position: relative;
+    height: 240px;
+   flex-shrink: 0;
+    border-radius: 5px;
+    margin-bottom: 1cm;
+}
+.hawirote .rote .wind{
+    height:100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+   
+    transition:0.5s;
+}
+.hawirote .rote .wind.minrote1{
+    z-index: 1;
+    transform-origin: top;
+   background-image: url("https://icon-library.com/images/audi-icon/audi-icon-17.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 5px;
+   box-shadow: 8px 8px 20px 0.1px grey;
+}
+#j1{ background-image: url("https://cdn.worldvectorlogo.com/logos/jaguar-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+    #j2{ background-image: url("https://brandlogos.net/wp-content/uploads/2020/03/new-bmw-logo-2020.png");
+        background-repeat: no-repeat;
+        background-size: cover;}
+
+        #j3{ background-image: url("https://simg.nicepng.com/png/small/535-5358437_truckerland-mercedes-benz-s63-amg-background-amg-logo.png");
+            background-repeat: no-repeat;
+            background-size: cover;}
+        
+
+.hawirote .rote:hover .wind.minrote1{
+transform: translateY(100%) rotateX(90deg);
+box-shadow: none;
+}
+
+
+
+
+.hawirote .rote .wind.minrote2{
+transform-origin: bottom;
+background-color:rgba(128, 128, 128, 0.538);
+border-radius: 5px;
+transform: translateY(-100%) rotateX(90deg);
+padding: 0.1cm 0.1cm;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap-reverse;
+flex-direction: row-reverse;
+}
+.a{
+    
+    flex-shrink: 0;
+
+}
+.hatem{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    color: aliceblue;
+    background-color: #ff1744;
+    border: none;
+    border-radius: 5px;
+    padding:0.2cm 0.3cm;
+    transition: all 0.5s ;
+    filter: brightness(100%);
+    cursor: pointer;
+    
+}
+.hatem img{
+    transition:all 0.5s ;
+}
+.hatem:hover{
+ filter: brightness(90%);
+}
+.hatem:hover > img{
+    transform: translateX(240%);
+    opacity: 0.7;
+   }
+    
+
+.b{
+    border-radius: 3px;
+    background-image: url("https://cdn4.vectorstock.com/i/1000x1000/04/08/sport-car-icon-simple-black-style-vector-19650408.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.c{
+    
+    border-radius: 3px;
+    background-image: url("https://image.shutterstock.com/image-vector/crossover-black-car-icon-isolated-260nw-1320441632.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.d{
+   
+    border-radius: 3px;
+    background-image: url("https://image.shutterstock.com/image-vector/suv-car-icon-creative-symbol-600w-1685976064.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.e{
+   
+    border-radius: 3px;
+    background-image: url("https://image.shutterstock.com/image-vector/sedan-car-icon-vector-template-600w-708583861.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.f{
+    background-image: url("https://i.pinimg.com/originals/d1/ae/c1/d1aec19339283a6c642acd1cff12a02b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.9s;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+.b:hover ~ .f{
+background-image:url("https://audimediacenter-a.akamaihd.net/system/production/media/38980/images/cc288f3f57e178e58c3edfeed3f52fce6b906666/A1610623_blog.jpg?1582301644");
+}
+.c:hover ~ .f{
+background-image:url("https://images.pistonheads.com/nimg/44847/1.jpg");
+    
+    }
+    .d:hover ~ .f{
+        background-image:url("https://hips.hearstapps.com/hmg-prod/images/2022-audi-q4-e-tron-127-1618346626.jpg?crop=0.670xw:0.755xh;0.175xw,0.149xh&resize=640:*");
+        }
+        .e:hover ~ .f{
+            background-image:url("https://media.ed.edmunds-media.com/audi/s6/2021/oem/2021_audi_s6_sedan_prestige_fq_oem_1_1600.jpg");
+            }
+
+
+            .g{
+    
+                border-radius: 3px;
+                background-image: url("https://cdn4.vectorstock.com/i/1000x1000/04/08/sport-car-icon-simple-black-style-vector-19650408.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                cursor: pointer;
+            }
+            .h{
+                
+                border-radius: 3px;
+                background-image: url("https://image.shutterstock.com/image-vector/crossover-black-car-icon-isolated-260nw-1320441632.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                cursor: pointer;
+            }
+            .i{
+               
+                border-radius: 3px;
+                background-image: url("https://image.shutterstock.com/image-vector/suv-car-icon-creative-symbol-600w-1685976064.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                cursor: pointer;
+            }
+            .j{
+               
+                border-radius: 3px;
+                background-image: url("https://image.shutterstock.com/image-vector/sedan-car-icon-vector-template-600w-708583861.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                cursor: pointer;
+            }
+            .k{
+                background-image: url("https://images.netdirector.co.uk/gforces-auto/image/upload/w_600,h_450,dpr_2.0,q_auto,c_fill,f_auto,fl_lossy/auto-client/141964cf054f546782f1ecbae590df03/f_type_r_d_black_coupe.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: 0.9s;
+                border-radius: 3px;
+                flex-shrink: 0;
+            }
+            .g:hover ~ .k{
+            background-image:url("https://media.cdn-jaguarlandrover.com/api/v2/images/24908/w/680");
+            }
+            .h:hover ~ .k{
+                background-image:url("https://s3-prod-europe.autonews.com/s3fs-public/Jaguar%20I-Pace%2019%20web.jpg");
+                
+                }
+                .i:hover ~ .k{
+                    background-image:url("https://media.cdn-jaguarlandrover.com/api/v2/images/63465/w/680");
+                    }
+                    .j:hover ~ .k{
+                        background-image:url("https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20201008062027_Jaguar-XF-2021-front-2.jpg");
+                        }
+            
+                        .l{
+    
+                            border-radius: 3px;
+                            background-image: url("https://cdn4.vectorstock.com/i/1000x1000/04/08/sport-car-icon-simple-black-style-vector-19650408.jpg");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            cursor: pointer;
+                        }
+                        .m{
+                            
+                            border-radius: 3px;
+                            background-image: url("https://image.shutterstock.com/image-vector/crossover-black-car-icon-isolated-260nw-1320441632.jpg");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            cursor: pointer;
+                        }
+                        .n{
+                           
+                            border-radius: 3px;
+                            background-image: url("https://image.shutterstock.com/image-vector/suv-car-icon-creative-symbol-600w-1685976064.jpg");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            cursor: pointer;
+                        }
+                        .o{
+                           
+                            border-radius: 3px;
+                            background-image: url("https://image.shutterstock.com/image-vector/sedan-car-icon-vector-template-600w-708583861.jpg");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            cursor: pointer;
+                        }
+                        .q{
+                            background-image: url("https://i.tribune.com.pk/media/images/1253743-bmw-1480913303/1253743-bmw-1480913303.jpg");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            transition: 0.9s;
+                            border-radius: 3px;
+                            flex-shrink: 0;
+                        }
+                        .l:hover ~ .q{
+                        background-image:url("https://cdn.bmwblog.com/wp-content/uploads/BMW-10.jpg");
+                        }
+                        .m:hover ~ .q{
+                            background-image:url("https://i.pinimg.com/originals/b3/65/ce/b365cebd976bdd4b0b3119fbaed842dd.jpg");
+                        
+                            }
+                            .n:hover ~ .q{
+                                background-image:url("https://www.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/98-bmw-ix1-rear-quarter-panning.jpg");
+                                }
+                                .o:hover ~ .q{
+                                    background-image:url("https://www.optionstheedge.com/sites/default/files/field/featured-image/2019/the_bmw_m850i_xdrive_coupe_3.jpg");
+                                    }
+
+
+                                    .r{
+    
+                                        border-radius: 3px;
+                                        background-image: url("https://cdn4.vectorstock.com/i/1000x1000/04/08/sport-car-icon-simple-black-style-vector-19650408.jpg");
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        cursor: pointer;
+                                    }
+                                    .s{
+                                        
+                                        border-radius: 3px;
+                                        background-image: url("https://image.shutterstock.com/image-vector/crossover-black-car-icon-isolated-260nw-1320441632.jpg");
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        cursor: pointer;
+                                    }
+                                    .t{
+                                       
+                                        border-radius: 3px;
+                                        background-image: url("https://image.shutterstock.com/image-vector/suv-car-icon-creative-symbol-600w-1685976064.jpg");
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        cursor: pointer;
+                                    }
+                                    .u{
+                                       
+                                        border-radius: 3px;
+                                        background-image: url("https://image.shutterstock.com/image-vector/sedan-car-icon-vector-template-600w-708583861.jpg");
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        cursor: pointer;
+                                    }
+                                    .x{
+                                        background-image: url("https://images.netdirector.co.uk/gforces-auto/image/upload/w_412,h_309,dpr_2.0,q_auto,c_fill,f_auto,fl_lossy/auto-client/52bb30c4adafc0439b84be84066bd124/eqs_image_mobile_.jpg");
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        transition: 0.9s;
+                                        border-radius: 3px;
+                                        flex-shrink: 0;
+                                    }
+                                    .r:hover ~ .x{
+                                    background-image:url("https://cdn.motor1.com/images/mgl/QN6GO/s1/4x3/2018-mercedes-amg-gt-r-first-drive.webp");
+                                    }
+                                    .s:hover ~ .x{
+                                        background-image:url("https://www.drive.gr/sites/default/files/node-files/photos/news/2018/02/mercedes-benz_a-class_2018_0.jpg");
+                                    
+                                        }
+                                        .t:hover ~ .x{
+                                            background-image:url("data:image/jpeg;base64,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");
+                                            }
+                                            .u:hover ~ .x{
+                                                background-image:url("https://hips.hearstapps.com/hmg-prod/images/2022-mercedes-benz-c-class-106-1613767205.jpg?crop=0.889xw:1.00xh;0.0353xw,0&resize=640:*");
+                                                }
+                                    
+                                  
+
+            .v{transition: all 0.5s;}
+ .v:hover{
+filter: brightness(80%);
+transform: scale(0.95);
+ }
+.hawirote .rote:hover .wind.minrote2{
+    transform: translateY(0%) rotateX(0deg);
+}
+
+.audi{
+    width: 100%;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    padding: 0.2cm 0.5cm 0.2cm 0.5cm;
+    border-radius: 5px;
+    margin: 0.5cm 0 0.5cm 0;
+    
+}
+
+#titaudi{
+width: 100%;
+font-size: 1cm;
+font-weight: 600;
+color: aliceblue;
+
+}
+
+#titaudi span{
+    color: aliceblue;
+    transition: all 0.5s;
+cursor: pointer;
+}
+#titaudi:hover span{
+color: #ff1744;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    
+}
+.menu .talk{
+    width: 100%;
+    color: antiquewhite;
+}
+.menu .photo{
+    width: 100%;
+}
+.menu .photo img{
+    width: 90%;
+}
+.bakk{
+    display: flex;
+    width: 100%;
+    max-width: 550px;
+    justify-content: space-around;
+    margin-top: 1cm;
+    flex-wrap: wrap;
+}
+.bak{
+    width: 160px;
+    height: 100px;
+    position: relative;
+    transition: all 0.5s;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.bak img{
+    width: 160px;
+    height: 100px;
+}
+.bak:hover{
+    filter: brightness(50%);
+}
+
+.hawibaycart{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 2cm;
+    flex-wrap: wrap;
+   
+}
+
+.cart{
+    width: 320px;
+    height: 220px;
+    padding: 0cm 0.3cm 0cm 0.3cm ;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+   flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    box-shadow: 1px 1px 4px 0.01px grey;
+    transition: all 0.5s;
+    background-color: rgba(240, 248, 255, 0.192);
+    margin-bottom: 2cm;
+  
+    
+}
+.cart:hover{
+    box-shadow: 0px 0px 20px 0.01px grey;
+    
+
+}
+.cart:hover .car{
+ 
+    transform: scale(1.5);
+}
+    
+.black{
+    color: #212121;
+}
+
+.car{
+position: relative;
+width:200px;
+height: 100px;
+top: -60px;
+flex-shrink: 0;
+transition: all 0.5s;
+background-repeat: no-repeat;
+background-size: cover;
+transition: all 0.5s;
+}
+#cr26:hover ~ .cr26{
+    height:130px; width: 180px;
+}
+#mg77:hover ~ .cr26{
+    height:130px; width: 180px;
+
+}
+#mg74:hover ~ .cr25{
+    height:80px; width: 215px;
+    
+}
+#cr24:hover ~ .cr24{
+    height:110px; width: 170px;
+    
+}
+.cr7{
+    background-image: url("https://www.blackrentdubai.com/wp-content/uploads/2020/01/Audi-RS3.png");
+    border-radius: 5px;
+}
+.cr8{
+    background-image: url("https://i.imgur.com/1ba0H0B.png");
+    border-radius: 5px;
+}
+.cr9{
+    background-image: url("https://i.imgur.com/K3UwXGB.png");
+    border-radius: 5px;
+}
+.cr10{
+    background-image: url("https://ecosetting-files.com/en/image/models/aaqaYvUTHYK4YWa1QGFwOY4uGgFXI5.png");
+    border-radius: 5px;
+}
+.cr11{
+    background-image: url("https://i.imgur.com/WPQhnql.png");
+    border-radius: 5px;
+}
+.cr12{
+    background-image: url("https://assets.fastly.carvana.io/algocontent/vehicle-evox/2018-audi-r8.png?crop=2000,1200,x120,y340&width=350&height=210&dpr=2&format=png&auto=webp");
+    border-radius: 5px;
+}
+.cr13{
+    background-image: url("https://i.imgur.com/fZj41yj.png");
+    border-radius: 5px;
+}
+.cr14{
+    background-image: url("https://purepng.com/public/uploads/large/purepng.com-jaguar-f-pace-white-carcarvehicletransportjaguar-961524650283tduar.png");
+    border-radius: 5px;
+}
+.cr15{
+    background-image: url("https://i.imgur.com/w8EFpTX.png");
+    border-radius: 5px;
+}
+.cr16{
+    background-image: url("https://freebiescloud.com/wp-content/uploads/2020/10/2-11.png");
+    border-radius: 5px;
+}
+.cr17{
+    background-image: url("https://i.imgur.com/PhmtgtA.png");
+    border-radius: 5px;
+}
+.cr18{
+    background-image: url("https://i.imgur.com/AZTXeS0.png");
+    border-radius: 5px;
+}
+.cr19{
+    background-image: url("https://i.imgur.com/cPAiIgX.png");
+    border-radius: 5px;
+}
+.cr20{
+    background-image: url("https://i.imgur.com/nrPP7u4.png");
+    border-radius: 5px;
+}
+.cr21{
+    background-image: url("https://cdn.dicklovett.co.uk/uploads/new_vehicle/4_23.png?v=1645180066");
+    border-radius: 5px;
+}
+.cr22{
+    background-image: url("https://i.imgur.com/rOiP151.png");
+    border-radius: 5px;
+}
+.cr23{
+    background-image: url("https://i.pinimg.com/originals/be/04/ab/be04ab6df3918d5997f6d3c1d3d0ebb6.png");
+    border-radius: 5px;
+}
+.cr24{
+    background-image: url("https://platform.cstatic-images.com/large/in/v2/stock_photos/0a9f15bb-bbe0-491e-abbe-0d0048b1c976/eff10f88-202e-4d33-accc-b46765a6c530.png");
+    border-radius: 5px;
+}
+.cr25{
+    background-image: url("https://i.imgur.com/YQCjIVQ.png");
+    border-radius: 5px;
+}
+.cr26{
+    background-image: url("https://i.imgur.com/E2bcHIf.png");
+    border-radius: 5px;
+}
+.cr27{
+    background-image: url("https://www.pngkit.com/png/full/927-9274422_suv-mercedes-amg-mercedes-glc-coupe-amg.png");
+    border-radius: 5px;
+}
+
+.hoveri{
+    width: 70px;
+    height: 40px; 
+    flex-shrink: 0;
+}
+.hoveri button{
+ width: 100%;
+ height: 100%;
+ font-size: 0.6cm;
+ background-color: #212121;
+ color: aliceblue;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+transition: all 0.5s;
+}
+.hoveri button:hover{
+    color: #212121;
+    background-color: aliceblue;
+    transform: scale(0.95);
+}
+.mg1:hover ~ .cr7{
+    background-image: url("https://www.pngmart.com/files/22/Audi-RS3-Sportback-PNG-Isolated-File.png");
+}
+.mg2:hover ~ .cr7{
+    background-image: url("https://car-data.carwow.co.uk/image?filter%5Bangle%5D=side&filter%5Bderivative_id%5D=98724&filter%5Bsize%5D=800");
+}
+.mg3:hover ~ .cr7{
+    background-image: url("https://www.streetstylez.ch/images/product_images/original_images/Audi%20ring/heck/s3_heck.png");
+}
+
+.mg4:hover ~ .cr7{
+    background-image: url("https://audimediacenter-a.akamaihd.net/system/production/media/38895/images/89a7291e88b44f038c07f8dcc827da6bb0936b00/A1610538_blog.jpg?1582301053");
+}
+.mg5:hover ~ .cr8{
+    background-image: url("https://i.imgur.com/nW83WOD.png");
+}
+.mg6:hover ~ .cr8{
+    background-image: url("https://i.imgur.com/XVv4KB1.png");
+}
+
+.mg7:hover ~ .cr8{
+    background-image: url("https://i.imgur.com/7xUYFrQ.png");
+}
+.mg8:hover ~ .cr8{
+    background-image: url("https://i.pinimg.com/originals/20/a6/8b/20a68ba2c1a9e1a457913ac4ff007592.jpg");
+}
+.mg9:hover ~ .cr9{
+    background-image: url("https://i.imgur.com/uKbToRP.png");
+}
+
+.mg10:hover ~ .cr9{
+    background-image: url("https://i.imgur.com/wu0iy1l.png");
+}
+.mg11:hover ~ .cr9{
+    background-image: url("https://www.pngmart.com/files/22/Audi-RS6-PNG-HD-Isolated.png");
+}
+.mg12:hover ~ .cr9{
+    background-image: url("https://i.pinimg.com/originals/a5/07/1a/a5071a9952c6020159cf09d0e1501b0a.jpg");
+}
+.mg13:hover ~ .cr10{
+    background-image: url("https://audi-store.netlify.app/images/q8/front.png");
+}
+.mg14:hover ~ .cr10{
+    background-image: url("https://cdn.drivek.it/configurator-icon/cars/fr/800/AUDI/Q8/32443_SUV-5-PORTES/audi-q8-icona.png");
+}
+.mg15:hover ~ .cr10{
+    background-image: url("https://freebiescloud.com/wp-content/uploads/2021/06/Audi-Q8-2019-5.png");
+}
+.mg16:hover ~ .cr10{
+    background-image: url("https://audimediacenter-a.akamaihd.net/system/production/media/62873/images/132ae6ead1a61198056fffaacb7ab8535893ed1d/A186318_blog.jpg?1582425342");
+}
+.mg17:hover ~ .cr11{
+    background-image: url("https://i.imgur.com/T1JBTdL.png");
+}
+.mg18:hover ~ .cr11{
+    background-image: url("https://i.imgur.com/aVqyZsW.png");
+}
+.mg19:hover ~ .cr11{
+    background-image: url("https://d1sfhav1wboke3.cloudfront.net/ImageServer/Apim2media/Images/14863/0b2dc667624e473c83e13a8096a9b95a.png?width=1056&height=594");
+}
+.mg20:hover ~ .cr11{
+    background-image: url("https://cdn.carbuzz.com/gallery-images/2022-audi-rs7-dashboard-carbuzz-625155-1600.jpg");
+}
+.mg21:hover ~ .cr12{
+    background-image: url("https://i.imgur.com/QMgJ63n.png");
+}
+.mg22:hover ~ .cr12{
+    background-image: url("https://i.imgur.com/zcF1Hln.png");
+}
+.mg23:hover ~ .cr12{
+    background-image: url("https://i.imgur.com/sIduYyP.png");
+}
+.mg24:hover ~ .cr12{
+    background-image: url("https://cdn.carbuzz.com/gallery-images/2021-audi-r8-spyder-dashboard-carbuzz-497893-1600.jpg");
+}
+.mg25:hover ~ .cr13{
+    background-image: url("https://i.imgur.com/bYmcUKM.png");
+}
+.mg26:hover ~ .cr13{
+    background-image: url("https://i.imgur.com/CGFx6MF.png");
+}
+.mg27:hover ~ .cr13{
+    background-image: url("https://i.imgur.com/aSZcT4f.png");
+}
+.mg28:hover ~ .cr13{
+    background-image: url("https://di-uploads-pod6.s3.amazonaws.com/jaguarannapolis/uploads/2016/09/2017-Jaguar-F-Type-Interior-1024x576.jpg");
+}
+
+.mg29:hover ~ .cr14{
+    background-image: url("https://i.imgur.com/9lCpuyZ.png");
+}
+.mg30:hover ~ .cr14{
+    background-image: url("https://cka-dash.s3.amazonaws.com/045-0619-JH417/model1.png");
+}
+.mg31:hover ~ .cr14{
+    background-image: url("https://i.imgur.com/uChEKW3.png");
+}
+.mg32:hover ~ .cr14{
+    background-image: url("https://i.ytimg.com/vi/69kLh_A0jxE/maxresdefault.jpg");
+}
+
+.mg33:hover ~ .cr15{
+    background-image: url("https://i.imgur.com/gU8Bz00.png");
+}
+.mg34:hover ~ .cr15{
+    background-image: url("https://i.imgur.com/xm4pEB3.png");
+}
+.mg35:hover ~ .cr15{
+    background-image: url("https://i.imgur.com/m54vYEV.png");
+}
+.mg36:hover ~ .cr15{
+    background-image: url("https://di-uploads-pod6.dealerinspire.com/jaguarnewportbeach/uploads/2020/04/Jaguar-XF-interior.png");
+}
+
+.mg37:hover ~ .cr16{
+    background-image: url("https://media-server2.modenamotorsgmbh.com/26525-medium_default/bmw-m8-competition.jpg");
+}
+.mg38:hover ~ .cr16{
+    background-image: url("https://cdn.drivek.it/configurator-icon/cars/fr/$original$/BMW/M8-COUPE/40903_COUPE-2-DOORS/bmw-m8-coupe-2022-side-view.png");
+}
+
+.mg39:hover ~ .cr16{
+    background-image: url("https://d1sfhav1wboke3.cloudfront.net/ImageServer/Apim2media/Images/21181/69d430a5-aeb8-4778-8086-f59688650638.png?width=1056&height=594");
+}
+.mg40:hover ~ .cr16{
+    background-image: url("https://i.ytimg.com/vi/vDJLNspTrAU/maxresdefault.jpg");
+}
+
+.mg41:hover ~ .cr17{
+    background-image: url("https://i.imgur.com/5Pi5lMJ.png");
+}
+.mg42:hover ~ .cr17{
+    background-image: url("https://i.imgur.com/GchawPi.png");
+}
+.mg43:hover ~ .cr17{
+    background-image: url("https://i.imgur.com/UkWm3HQ.png");
+}
+.mg44:hover ~ .cr17{
+    background-image: url("https://www.netcarshow.com/BMW-X6_M50i-2020-1600-51.jpg");
+}
+.mg45:hover ~ .cr18{
+    background-image: url("http://data.3dtuning.com/tun/CJrXpR58MJ.png");
+}
+.mg46:hover ~ .cr18{
+    background-image: url("https://i.imgur.com/OBVMMvl.png");
+}
+.mg47:hover ~ .cr18{
+    background-image: url("http://data.3dtuning.com/tun/xKUOc3HUu9.jpg");
+}
+.mg48:hover ~ .cr18{
+    background-image: url("https://carwow-uk-wp-3.imgix.net/bmw-4-series-gran-coupe-interior-dashboard-infotainment-system-1.jpg");
+}
+.mg49:hover ~ .cr19{
+    background-image: url("https://i.imgur.com/zvVqYYi.png");
+}
+
+.mg50:hover ~ .cr19{
+    background-image: url("https://i.imgur.com/XZu8LwK.png");
+}
+.mg51:hover ~ .cr19{
+    background-image: url("https://i.imgur.com/RjClHaP.jpg");
+}
+.mg52:hover ~ .cr19{
+    background-image: url("https://i.ytimg.com/vi/uGqtHf3qj_0/maxresdefault.jpg");
+}
+
+.mg53:hover ~ .cr20{
+    background-image: url("https://i.imgur.com/eDK3EkC.png");
+}
+.mg54:hover ~ .cr20{
+    background-image: url("https://cdn.drivek.it/configurator-icon/cars/fr/800/BMW/I4/40553_BERLINE-A-HAYON-5-PORTES/bmw-i4-2021-side-view.png");
+}
+.mg55:hover ~ .cr20{
+    background-image: url("https://i.imgur.com/eLyXCaL.png");
+}
+.mg56:hover ~ .cr20{
+    background-image: url("https://i0.wp.com/evtak.com/wp-content/uploads/2022/02/P90439369_highRes_bmw-i4-m50-9-2.jpg");
+}
+
+.mg57:hover ~ .cr21{
+    background-image: url("https://i.imgur.com/gxifmMn.png");
+}
+.mg58:hover ~ .cr21{
+    background-image: url("https://i.imgur.com/nhrMqEm.png");
+}
+.mg59:hover ~ .cr21{
+    background-image: url("https://f90.bimmerpost.com/forums/attachment.php?attachmentid=2354544");
+}
+.mg60:hover ~ .cr21{
+    background-image: url("https://www.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/93-bmw-m5-cs-2021-official-reveal-interior.jpg");
+}
+.mg61:hover ~ .cr22{
+    background-image: url("https://imagecdn.leasingoptions.co.uk/fit-in/750x500/image/vehicles/pix_png2048/mercedes/eqc/1/5suv%20amglinepremium/mercedes_19eqc400amgln4wdsu1b_frontview.png");
+}
+.mg62:hover ~ .cr22{
+    background-image: url("https://s3-eu-west-1.amazonaws.com/staticeu.izmocars.com/toolkit/commonassets/2019/19mercedesbenz/19mercedesbenzeqc400amgln4wdsu1b/19mercedesbenzeqc400amgln4wdsu1b_animations/_eucolor/FR/_570x380/mercedesbenz_19eqc400amgln4wdsu1b_argenthightechmetallise.png");
+}
+.mg63:hover ~ .cr22{
+    background-image: url("https://i.imgur.com/J9s3Xlx.png");
+}
+.mg64:hover ~ .cr22{
+    background-image: url("https://www.la.mercedes-benz.com/en/passengercars/mercedes-benz-cars/models/eqc/design/line-details/interior/_jcr_content/par/productinfotextimage/media2/slides/videoimageslide_8d19/image.MQ6.12.20220204231354.jpeg");
+}
+
+.mg65:hover ~ .cr23{
+    background-image: url("https://i.imgur.com/nDooDgA.png");
+}
+.mg66:hover ~ .cr23{
+    background-image: url("https://i.imgur.com/UdE7mPi.png");
+}
+.mg67:hover ~ .cr23{
+    background-image: url("https://i.imgur.com/EkgGVAZ.png");
+}
+.mg68:hover ~ .cr23{
+    background-image: url("https://di-uploads-pod6.dealerinspire.com/mercedesbenzofcincinnati/uploads/2019/06/2019-E-Class.jpg");
+}
+
+.mg69:hover ~ .cr24{
+    background-image: url("https://mensgear.net/wp-content/uploads/2019/05/AMG-GT-63-S-4MATIC-By-Brabus-980x657.png");
+}
+.mg70:hover ~ .cr24{
+    background-image: url("https://cut-images.roadster.com/evox/color_1280_001_png/14311/14311_cc1280_001_896.png");
+}
+.mg71:hover ~ .cr24{
+    background-image: url("https://www.netcarshow.com/Mercedes-Benz-C63_AMG_Coupe-2017-1600-55.jpg");
+}
+.mg72:hover ~ .cr24{
+    background-image: url("https://group-media.mercedes-benz.com/marsMediaSite/Thumbnail?oid=34347789&version=-2&thumbnailVersion=3");
+}
+
+.mg73:hover ~ .cr25{
+    background-image: url("https://i.pinimg.com/originals/f9/8c/e5/f98ce5e933cfa0a66a06401c03950ea3.png");
+}
+.mg74:hover ~ .cr25{
+    background-image: url("https://i.imgur.com/N3txzOt.png");
+}
+.mg75:hover ~ .cr25{
+    background-image: url("https://www.pngkey.com/png/full/179-1790118_mercedes-amg-gt-s-car-hire-rear-view.png");
+}
+.mg76:hover ~ .cr25{
+    background-image: url("https://www.la.mercedes-benz.com/en/passengercars/mercedes-benz-cars/models/amg-gt/roadster-r190/design/designpackages/amgnightpackage-interior/_jcr_content/par/productinfotextimage/media2/slides/videoimageslide_2129014438/image.MQ6.12.20200406233807.jpeg");
+}
+
+.mg77:hover ~ .cr26{
+    background-image: url("https://carpics.rydeshopper.com/still/original/14395/14395_118_white.jpeg");
+}
+.mg78:hover ~ .cr26{
+background-image: url("https://i.imgur.com/7CPK7dD.png");
+}
+.mg79:hover ~ .cr26{
+    background-image: url("https://i.imgur.com/lwwWqa7.png");
+}
+.mg80:hover ~ .cr26{
+    background-image: url("https://i0.wp.com/o.aolcdn.com/images/dims3/GLOB/legacy_thumbnail/1600x900/format/jpg/quality/85/https://s.aolcdn.com/os/ab/_cms/2022/03/01123437/FMxhrVqWUA0qlhY.jpg?w=889&ssl=1");
+}
+
+.mg81:hover ~ .cr27{
+    background-image: url("https://cdn.carbuzz.com/gallery-images/2022-mercedes-benz-glc-class-coupe-front-view-carbuzz-600341.jpg");
+}
+.mg82:hover ~ .cr27{
+    background-image: url("https://i.imgur.com/7f34Tak.png");
+}
+.mg83:hover ~ .cr27{
+    background-image: url("https://i.imgur.com/J9s3Xlx.png");
+}
+.mg84:hover ~ .cr27{
+    background-image: url("data:image/jpeg;base64,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");
+}
+
+
+.bayme{
+    width: 100%;
+    height: 50px;
+flex-shrink: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.name1{
+   display: flex;
+   width: 45%;
+}
+
+.name1 .odd{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 600;
+    color: aliceblue;
+}
+.name1 .odd span{
+color: black;
+margin-left: 4px;
+}
+.baybut a button{
+    padding: 0.2cm 0.3cm;
+    color: aliceblue;
+    background-color: #1faa00;
+    border: none;
+    font-size: 0.4cm;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.baybut a button:hover{
+background-color: #212121;
+color:#64dd17;
+transform: scale(0.95);
+}
+.morebut a button{
+    padding: 0.2cm 0.3cm;
+    color: aliceblue;
+    background-color:#ff1744;
+    border: none;
+    font-size: 0.4cm;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.morebut a button:hover{
+color: #ff1744;
+background-color: #212121;
+transform: scale(0.95);
+}
+.khat{
+    background-color: #ff1744;
+    height:45px;
+    width: 6px;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.morabe3{
+    max-width: 900px;
+    width: 100%;
+    padding: 0.5cm 0.2cm 0 0.2cm;
+}
+.morabe3 .tittools{
+    font-size: 0.8cm;
+    font-weight: 800;
+    color: #212121;
+    margin-bottom: 0.3cm;
+}
+.morabe3 .list .li1{
+    font-weight: 600;
+    color: #212121;
+    font-size: 0.4cm;
+    margin-top: 0.3cm;
+}
+
+.morabe3 .list .li2{
+    margin-bottom: 0.3cm;
+    font-size: 0.4cm;
+
+}
+.morabe3 .list .li3 a{
+  text-decoration: none;
+  color: #e040fb;
+  transition: all 0.5s;
+  font-size: 0.4cm;
+
+  
+}
+.morabe3 .list .li3 {
+margin-bottom: 0.3cm;
+}
+.morabe3 .list .li3 a:hover{
+   color: #ff1744;
+    
+  }
+  .morabe3 .list .li4{
+  width: 100%;
+  height: 1px;
+  background-color: #4141413d;
+}
+
+.flexme{
+    width: 100%;
+   padding: 0.5cm 0 0 0;
+    display: flex;
+justify-content: space-around;
+}
+.flexme .web1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 0.5cm;
+    align-items: center;
+    min-width: 300px;
+    flex-shrink: 0;
+}
+
+.flexme .contact{
+width: 30%;
+min-width: 300px;
+flex-shrink: 0;
+}
+
+
+.train{
+    font-size: 0.4cm;
+    color: #212121;
+    font-weight: 600;
+    margin-bottom: 0.6cm;
+
+}
+#deco{
+    text-decoration: none;
+    color: #212121;
+    transition: all 0.4s;
+}
+.eroca{
+    font-size: 0.35cm; 
+    font-weight: 400;
+    margin-bottom: 0.2cm;
+
+}
+#deco:hover{
+color: #e040fb;
+}
+.icons{
+    display: flex;
+}
+.icons div a img{
+    margin-right: 15px;
+    transition: all 0.2s;
+
+} 
+
+.icons div a img:hover{
+    transform:translateY(-0.2cm);
+} 
+.copyright{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5cm 0.2cm 0 0.2cm;
+}
+.cop1{
+    font-size: 0.3cm;
+    color: #414141;
+}
+.HatemgGouasmia{
+    width: 100%;
+    text-align: center;
+    font-size: 0.4cm;
+    color: #414141;
+    margin-top: 0.3cm;
+}
+.HatemgGouasmia a{
+text-decoration: none;
+color: #ff1744;
+transition: all 0.3s;
+
+}
+.HatemgGouasmia a:hover{
+    color: #e040fb;
+}
+
+@media screen and (max-width:1027px) {
+    .hawicard{
+        flex-direction: column;
+        align-items: center;
+        height: 1100px;
+        margin-bottom: 0;
+        margin-top: 0.5cm;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .navbar{
+    justify-content: space-between;
+    padding: 0 0 0 0 ;
+    background-color: inherit;
+    
+    }
+    .navbar .div{
+        width: 100%;
+        justify-self: start;
+    background-color: white;
+
+
+    }
+    .navbar .di{
+       width: 100%;
+      flex-direction: column;
+      margin-left: 0px;
+      align-content: flex-end;
+      margin-top: 0cm;
+      margin-bottom: 1.5cm;
+      background-color: inherit;
+    }
+    .df{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: scaleY(0);
+        background-color: inherit;
+        z-index: 1;
+        
+        position: absolute;
+        top: 1.5cm;
+        left: 30%;
+   height: 4.4cm;
+   transition: all 0.5s;
+   justify-content: space-between;
+   transform-origin: top;
+        }
+            .tit{
+        margin-left: 0px;
+    }
+    .navbar .div p{
+        width: 100%;
+    
+    }
+
+    .menu .photo{
+        display: none;
+    }
+    
+    .menu .photo img{
+        display: none;
+    }
+    
+    .hawibaycart{
+        justify-content: center;
+        
+        
+    }
+    .cart{
+        margin-left: 0.5cm;
+    }
+    
+    .lines3{
+        display: flex;
+        flex-direction: column;
+       
+        align-self: flex-end;
+       width: 100%;
+       height: 1.5cm;
+       align-items: flex-end;
+      background-color: white;
+       
+       position: absolute;
+       z-index: 0;
+       transition: all 0.5s;
+        
+    }
+    .line1{z-index: 1;
+    transition: all 0.4s;
+   
+  
+}
+    .line2{z-index: 1;
+        transition: all 0.4s;
+       
+    }
+    .line3{z-index: 1;
+        transition: all 0.4s;
+        
+    }
+
+    .di{
+        margin-right: 0px;
+        transition: all 0.5s;
+        position: relative;
+    }
+    .lines3:hover{
+    height: 6cm;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+
+    }
+  
+   .lines3:hover  .df{
+    transform: scaleY(1);
+    background-color: white;
+   justify-content: space-between;
+    
+   }
+   .gj{
+    display: flex;
+    margin-top: 0.15cm;
+   }
+   .lines3:hover .gj .line1{
+     
+    
+     transform: rotateZ(50deg) translate(0.39cm,0.42cm);
+     width: 1.2cm;
+     border-radius: 5px;
+}
+.lines3:hover .gj .line3{
+     
+    width: 1.2cm;
+    transform: rotateZ(-50deg) translate(0.4cm,-0.42cm);
+    border-radius: 5px;
+}
+.lines3:hover .gj .line2{
+    border-radius: 5px;
+}
+
+.flexme{
+    flex-wrap: wrap;
+}
+.web1{
+    width: 100%;
+}
+.contact{
+    width: 100%;
+    margin-top: 0.5cm;
+}
+.web1 div{
+   width: 100%;
+   justify-self: flex-start;
+}
+.copyright{
+    flex-direction: column;
+    align-items: center;
+}
+}
